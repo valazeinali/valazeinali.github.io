@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <div style="height:900px; background-color: lightBlue;" align="center">  
+	  <br>
+      <p>  Coming Soon!
+	  <br> </p>
+	    <p> </p>
+       
+	<br><br>
+   <hr width="50">
+<a href="Frontpage.html" style="color:black;font-weight:bold;">Home</a>
+<hr width="50">
+   </div>
+   
+   </body>
+</html>
