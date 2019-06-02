@@ -1,0 +1,120 @@
+
+$c--code: #666; 
+$c--bg: #333;
+$c--string: #999;
+$c--name: #99b1d4;
+$c--syntax: #eee;
+$c--comment: #666;
+$c--link-hover: #59b2ff;
+$c--line-hover: #444;
+$c--white: #fff;
+$c--line: #999;
+
+* { box-sizing: border-box; }
+
+body, html { 
+  width: 100%; 
+  height: 100%; 
+  padding: 0; 
+  margin: 0; 
+  background-color: DCDCDC;
+}
+
+.page {
+  /*width: 2000px;*/
+  height: auto;
+  background-color: DCDCDC;
+  font-family: 'Courier';
+  font-size: 32px;
+  line-height: 1.6;
+  padding: 0px;
+  overflow-x: scroll;
+  // padding: 80px 120px;
+  z-index: 100;
+}
+p {
+    margin: 0;
+}
+a {
+  color: $c--link-hover;
+
+  &:hover {
+    color: $c--white;
+  }
+
+  &.logo {
+    color: $c--link-hover;
+
+    &:hover {
+      color: $c--white;
+    }
+  }
+}
+.line {
+  color: $c--line;
+  padding-left: 200px;
+  z-index: 10;
+  &:hover {
+    background-color: $c--line-hover;
+  }
+}
+.line-blank {
+  width: 100%;
+}
+.string {
+  color: $c--white;
+}
+.name {
+  color: $c--name;
+}
+.syntax {
+  color: $c--syntax;
+}
+.comment {
+  color: $c--comment;
+  display: inline-block;
+  font-size: 4px;
+  line-height: 4px;
+}
+.snake-dot {
+  width:10px;height:10px;
+  position:absolute;
+  margin-top:-5px;margin-left:-5px;
+  z-index: 5;
+}
+.snake-line {
+  height:1px;
+  position:absolute;
+  transform-origin:0px 0px;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    font-size: 24px;
+    // padding: 40px 60px;
+  }
+  .line {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .page {
+    font-size: 16px;
+    // padding: 20px 30px;
+  }
+  .line {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    font-size: 14px;
+    // padding: 8px 12px;
+  }
+  .line {
+    padding-left: 25px;
+  }
+}
