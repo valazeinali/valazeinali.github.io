@@ -17,13 +17,13 @@ body, html {
   height: 100%; 
   padding: 0; 
   margin: 0; 
-  background-color: Grey;
+  background-color: grey;
 }
 
 .page {
   /*width: 2000px;*/
   height: auto;
-  background-color: Grey;
+  background-color: grey;
   font-family: 'Courier';
   font-size: 32px;
   line-height: 1.6;
