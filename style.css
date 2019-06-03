@@ -1,104 +1,62 @@
-/* add collapse expand add line hovers chcaracter hover too? randomized color palette make the lines go towards mouse add sm color palette for randomized dot color make editable with funny validation */
- * {
-   box-sizing: border-box;
-}
- body, html {
-   width: 100%;
-   height: 100%;
-   padding: 0;
-   margin: 0;
-   background-color: #333;
-}
- .page {
-  /*width: 2000px;
-  */
-   height: auto;
-   background-color: #333;
-   font-family: "Courier";
-   font-size: 32px;
-   line-height: 1.6;
-   padding: 0px;
-   overflow-x: scroll;
-   z-index: 100;
-}
- p {
-   margin: 0;
-}
- a {
-   color: #59b2ff;
-}
- a:hover {
-   color: #fff;
-}
- a.logo {
-   color: #59b2ff;
-}
- a.logo:hover {
-   color: #fff;
-}
- .line {
-   color: #999;
-   padding-left: 200px;
-   z-index: 10;
-}
- .line:hover {
-   background-color: #444;
-}
- .line-blank {
-   width: 100%;
-}
- .string {
-   color: #fff;
-}
- .name {
-   color: #99b1d4;
-}
- .syntax {
-   color: #eee;
-}
- .comment {
-   color: #666;
-   display: inline-block;
-   font-size: 4px;
-   line-height: 4px;
-}
- .snake-dot {
-   width: 10px;
-   height: 10px;
-   position: absolute;
-   margin-top: -5px;
-   margin-left: -5px;
-   z-index: 5;
-}
- .snake-line {
-   height: 1px;
-   position: absolute;
-   transform-origin: 0px 0px;
-   z-index: 4;
-}
- @media screen and (max-width: 1000px) {
-   .page {
-     font-size: 24px;
-  }
-   .line {
-     padding-left: 100px;
-  }
-}
- @media screen and (max-width: 700px) {
-   .page {
-     font-size: 16px;
-  }
-   .line {
-     padding-left: 50px;
-  }
-}
- @media screen and (max-width: 480px) {
-   .page {
-     font-size: 14px;
-  }
-   .line {
-     padding-left: 25px;
-  }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 15px;
+	background-color: #0a0a0a;
 }
 
- 
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 2.5px;
+	padding: 30px 0;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+}
+
+.heading span {
+	display: block;
+}
+
+.laptop {
+	box-sizing: border-box;
+	width: 900px;
+	max-width: 100%;
+	height: 550px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	background-image: url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1100&h=550&fit=crop&fp-y=.12);
+}
+
+.screen-overlay {
+	width: 600px;
+	height: 500px;
+	background-color: #191919;
+
+	/* Transform screen overlay to cover laptop screen image */
+	transform: matrix3d(1.11008, 0.108202, 0, 0.000394192, 
+						0.224001, 0.803852, 0, -8.80428e-05, 
+						0, 0, 1, 0, 
+						40, 34, 0, 1);
+	transform-origin: 0 0 0;
+}
+
+.live-view {
+	width: 200%;
+	height: 200%;
+	transform: scale(0.5);
+	transform-origin: top left;
+
+	/* Prevent user interaction with iframe content */
+	/* pointer-events: none; */
+}
