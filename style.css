@@ -60,3 +60,9 @@ body {
 	/* Prevent user interaction with iframe content */
 	/* pointer-events: none; */
 }
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
