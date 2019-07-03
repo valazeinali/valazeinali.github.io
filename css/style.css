@@ -1,0 +1,104 @@
+/* add collapse expand add line hovers chcaracter hover too? randomized color palette make the lines go towards mouse add sm color palette for randomized dot color make editable with funny validation */
+ * {
+   box-sizing: border-box;
+}
+ body, html {
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   background-color: #333;
+}
+ .page {
+  /*width: 2000px;
+  */
+   height: auto;
+   background-color: #333;
+   font-family: "Courier";
+   font-size: 32px;
+   line-height: 1.6;
+   padding: 0px;
+   overflow-x: scroll;
+   z-index: 100;
+}
+ p {
+   margin: 0;
+}
+ a {
+   color: #59b2ff;
+}
+ a:hover {
+   color: #fff;
+}
+ a.logo {
+   color: #59b2ff;
+}
+ a.logo:hover {
+   color: #fff;
+}
+ .line {
+   color: #999;
+   padding-left: 200px;
+   z-index: 10;
+}
+ .line:hover {
+   background-color: #444;
+}
+ .line-blank {
+   width: 100%;
+}
+ .string {
+   color: #fff;
+}
+ .name {
+   color: #99b1d4;
+}
+ .syntax {
+   color: #eee;
+}
+ .comment {
+   color: #666;
+   display: inline-block;
+   font-size: 4px;
+   line-height: 4px;
+}
+ .snake-dot {
+   width: 10px;
+   height: 10px;
+   position: absolute;
+   margin-top: -5px;
+   margin-left: -5px;
+   z-index: 5;
+}
+ .snake-line {
+   height: 1px;
+   position: absolute;
+   transform-origin: 0px 0px;
+   z-index: 4;
+}
+ @media screen and (max-width: 1000px) {
+   .page {
+     font-size: 24px;
+  }
+   .line {
+     padding-left: 100px;
+  }
+}
+ @media screen and (max-width: 700px) {
+   .page {
+     font-size: 16px;
+  }
+   .line {
+     padding-left: 50px;
+  }
+}
+ @media screen and (max-width: 480px) {
+   .page {
+     font-size: 14px;
+  }
+   .line {
+     padding-left: 25px;
+  }
+}
+
+ 
