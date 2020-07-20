@@ -15,7 +15,7 @@
    height: auto;
    background-color: #333;
    font-family: "Courier";
-   font-size: 32px;
+   font-size: 28px;
    line-height: 1.6;
    padding: 0px;
    overflow-x: scroll;
@@ -100,5 +100,3 @@
      padding-left: 25px;
   }
 }
-
- 
